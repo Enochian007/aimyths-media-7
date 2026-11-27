@@ -30,32 +30,32 @@ a{color:#5ee0a0}
 .foot{color:#5c5c6d;font-size:12px;margin-top:28px}
 </style></head><body><div class="wrap">
 <h1>@AIMythsExplained — workflow</h1>
-<div class="sub">Live view of the Shorts queue, render daemon, Buffer rollout and the weekly long-form. Snapshot, rebuilt every 10 minutes. Updated Thu 26 Nov 2026, 18:00:07 AEST.</div>
-<div class="cards"><div class="card"><div class="k">Live with AIO version</div><div class="v">27 / 75</div><div class="s">36% of the queue</div></div><div class="card"><div class="k">Waiting to host</div><div class="v">0</div><div class="s">QA passed, media swap pending</div></div><div class="card"><div class="k">Rendering now</div><div class="v">—</div><div class="s">daemon —, 0 children</div></div><div class="card"><div class="k">QA failed</div><div class="v">0</div><div class="s">needs a re-render</div></div><div class="card"><div class="k">Still to build</div><div class="v">30</div><div class="s">behind the current render</div></div></div>
-<div class="bar"><i style="width:36%"></i></div>
+<div class="sub">Live view of the Shorts queue, render daemon, Buffer rollout and the weekly long-form. Snapshot, rebuilt every 10 minutes. Updated Sat 28 Nov 2026, 09:50:21 AEST.</div>
+<div class="cards"><div class="card"><div class="k">Live with AIO version</div><div class="v">45 / 99</div><div class="s">45% of the queue</div></div><div class="card"><div class="k">Waiting to host</div><div class="v">6</div><div class="s">QA passed, media swap pending</div></div><div class="card"><div class="k">Rendering now</div><div class="v">ai-distillation</div><div class="s">daemon —, 0 children</div></div><div class="card"><div class="k">QA failed</div><div class="v">1</div><div class="s">needs a re-render</div></div><div class="card"><div class="k">Still to build</div><div class="v">44</div><div class="s">behind the current render</div></div></div>
+<div class="bar"><i style="width:45%"></i></div>
 <h2>Queue — next up</h2>
-<table><thead><tr><th>#</th><th>Short</th><th>Due (Brisbane)</th><th>Status</th></tr></thead><tbody><tr><td>21</td><td>ai-health-advice</td><td>2026-12-07 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>22</td><td>ai-weather-forecasting</td><td>2026-12-08 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>23</td><td>ai-invented-1956</td><td>2026-12-09 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>24</td><td>ai-fake-reviews</td><td>2026-12-10 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>25</td><td>robots-txt-ai-crawlers</td><td>2026-12-11 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>26</td><td>why-ai-uses-gpus</td><td>2026-12-12 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>27</td><td>agi-no-definition</td><td>2026-12-13 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>28</td><td>tokens-cost-more-languages</td><td>2026-12-14 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>29</td><td>quantisation-explained</td><td>2026-12-15 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>30</td><td>ai-emergent-abilities</td><td>2026-12-16 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>53</td><td>does-chatgpt-remember-you</td><td>2027-01-08 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>54</td><td>turing-test-myth</td><td>2027-01-09 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>55</td><td>chatgpt-training-on-chats</td><td>2027-01-10 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>56</td><td>ai-reasoning-not-faithful</td><td>2027-01-11 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>57</td><td>ai-watermarks-synthid</td><td>2027-01-12 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>58</td><td>face-recognition-errors</td><td>2027-01-13 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr></tbody></table>
-<h2>Render daemon</h2><pre>
-[2026-11-26T17:45:07+10:00] hermes-rollout: launching render-ready
-[2026-11-26T17:45:07+10:00] render-ready pid=958672 queued=0: []
-[2026-11-26T17:45:07+10:00] render-ready finished
-
-[2026-11-26T18:00:07+10:00] hermes-rollout: launching render-ready
-[2026-11-26T18:00:07+10:00] render-ready pid=969238 queued=0: []
-[2026-11-26T18:00:07+10:00] render-ready finished</pre>
-<h2>Buffer rollout</h2><pre>[2026-11-26T17:45:07+10:00] start dry=False max=all daemon_only=True pid=958671
-[2026-11-26T17:45:07+10:00] daemon stale-dead pid=952264 lock pid is not running
-[2026-11-26T17:45:07+10:00] starting render-ready daemon
-[2026-11-26T17:45:07+10:00] daemon started pid=958672 status=stale-wrong-process 
-[2026-11-26T17:45:07+10:00] daemon-only: done
-[2026-11-26T18:00:07+10:00] start dry=False max=all daemon_only=True pid=969235
-[2026-11-26T18:00:07+10:00] daemon stale-dead pid=958672 lock pid is not running
-[2026-11-26T18:00:07+10:00] starting render-ready daemon</pre>
-<h2>Weekly 9–11 min episode — gate: gated (Shorts first)</h2><pre>[2026-11-26T14:15:52+10:00] shorts gate BUSY: rendering gemini-vs-chatgpt; 16 engine2-beats Shorts still pending
-[2026-11-26T14:15:52+10:00] tick: gated, Shorts still have priority; not rendering
-[2026-11-26T16:42:04+10:00] start status_only=False start_render=False pid=940828
-[2026-11-26T16:42:04+10:00] episode 2026-W47 ai-sounds-sure status=script-ready dir=/workspace/longform/aio-weekly/episodes/2026-W47-ai-sounds-sure
-[2026-11-26T16:42:04+10:00] shorts gate BUSY: 17 engine2-beats Shorts still pending
-[2026-11-26T16:42:04+10:00] tick: gated, Shorts still have priority; not rendering</pre>
+<table><thead><tr><th>#</th><th>Short</th><th>Due (Brisbane)</th><th>Status</th></tr></thead><tbody><tr><td>95</td><td>ai-distillation</td><td>2026-01-18 12:00</td><td><span class="chip" style="background:#7a1f3d">rendering</span></td></tr><tr><td>89</td><td>ai-context-windows</td><td>2026-01-12 12:00</td><td><span class="chip" style="background:#7a5c1f">ready</span></td></tr><tr><td>90</td><td>ai-rag-explained</td><td>2026-01-13 12:00</td><td><span class="chip" style="background:#7a5c1f">ready</span></td></tr><tr><td>91</td><td>ai-multimodal-explained</td><td>2026-01-14 12:00</td><td><span class="chip" style="background:#7a5c1f">ready</span></td></tr><tr><td>92</td><td>ai-temperature-setting</td><td>2026-01-15 12:00</td><td><span class="chip" style="background:#7a5c1f">ready</span></td></tr><tr><td>94</td><td>ai-fine-tuning-vs-prompting</td><td>2026-01-17 12:00</td><td><span class="chip" style="background:#7a5c1f">ready</span></td></tr><tr><td>82</td><td>ai-not-creative</td><td>2027-01-02 12:00</td><td><span class="chip" style="background:#7a5c1f">ready</span></td></tr><tr><td>93</td><td>ai-prompt-injection</td><td>2026-01-16 12:00</td><td><span class="chip" style="background:#8a2b2b">qa fail</span></td></tr><tr><td>96</td><td>ai-edge-vs-cloud</td><td>2026-01-19 12:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>97</td><td>ai-api-costs</td><td>2026-01-20 12:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>98</td><td>ai-human-in-the-loop</td><td>2026-01-21 12:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>99</td><td>ai-slop-explained</td><td>2026-01-22 12:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>41</td><td>is-ai-art-stealing</td><td>2026-12-12 12:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>42</td><td>ai-reads-error-messages</td><td>2026-12-12 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>43</td><td>recommendation-algorithms-profile</td><td>2026-12-13 12:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr><tr><td>44</td><td>spotting-deepfakes</td><td>2026-12-13 19:00</td><td><span class="chip" style="background:#3a3a46">pending</span></td></tr></tbody></table>
+<h2>Render daemon</h2><pre>[2026-11-28T08:56:21+10:00] (#23) END ai-prompt-injection -&gt; qa-fail
+[2026-11-28T08:56:21+10:00] (#24, 45 more ready) START ai-fine-tuning-vs-prompting
+prepared ai-fine-tuning-vs-prompting /workspace/shorts/octo-queue-upgrade/work/ai-fine-tuning-vs-prompting
+ai-fine-tuning-vs-prompting QA PASS {&#x27;vo_s&#x27;: 1163, &#x27;render_s&#x27;: 1570, &#x27;qa_s&#x27;: 55, &#x27;finished&#x27;: &#x27;2026-11-28T09:42:48+10:00&#x27;, &#x27;master&#x27;: &#x27;/workspace/shorts/octo-queue-upgrade/work/ai-fine-tuning-vs-prompting/publish/final-short-v2.mp4&#x27;, &#x27;review&#x27;: &#x27;/workspace/shorts/octo-queue-upgrade/work/ai-fine-tuning-vs-prompting/publish/ai-fine-tuning-vs-prompting-review-720p.mp4&#x27;, &#x27;duration&#x27;: 39.28}
+review ai-fine-tuning-vs-prompting /workspace/shorts/octo-queue-upgrade/work/ai-fine-tuning-vs-prompting/publish/theme-phases-sheet.jpg
+[2026-11-28T09:42:50+10:00] (#24) END ai-fine-tuning-vs-prompting -&gt; qa-pass
+[2026-11-28T09:42:50+10:00] (#25, 44 more ready) START ai-distillation
+prepared ai-distillation /workspace/shorts/octo-queue-upgrade/work/ai-distillation</pre>
+<h2>Buffer rollout</h2><pre>[2026-11-28T09:31:04+10:00] skip ai-rag-explained: no Buffer posts yet (midday-filler territory)
+[2026-11-28T09:31:04+10:00] skip ai-multimodal-explained: no Buffer posts yet (midday-filler territory)
+[2026-11-28T09:31:04+10:00] skip ai-temperature-setting: no Buffer posts yet (midday-filler territory)
+[2026-11-28T09:31:04+10:00] skip ai-not-creative: no Buffer posts yet (midday-filler territory)
+[2026-11-28T09:31:04+10:00] done processed=0
+[2026-11-28T09:45:20+10:00] start dry=False max=all daemon_only=True pid=1519375
+[2026-11-28T09:45:20+10:00] daemon healthy pid=1067117 children=1 work_age_s=-0
+[2026-11-28T09:45:20+10:00] daemon-only: done</pre>
+<h2>Weekly 9–11 min episode — gate: gated (Shorts first)</h2><pre>[2026-11-28T06:50:38+10:00] shorts gate BUSY: shorts daemon pid=1067117 has 1 encode/VO children; rendering ai-prompt-injection; 45 engine2-beats Shorts still pending
+[2026-11-28T06:50:38+10:00] tick: gated, Shorts still have priority; not rendering
+[2026-11-28T08:17:43+10:00] start status_only=False start_render=False pid=1480449
+[2026-11-28T08:17:43+10:00] episode 2026-W47 ai-sounds-sure status=script-ready dir=/workspace/longform/aio-weekly/episodes/2026-W47-ai-sounds-sure
+[2026-11-28T08:17:43+10:00] shorts gate BUSY: shorts daemon pid=1067117 has 5 encode/VO children; rendering ai-prompt-injection; 45 engine2-beats Shorts still pending
+[2026-11-28T08:17:43+10:00] tick: gated, Shorts still have priority; not rendering</pre>
 <div class="foot">Read-only snapshot. Source: octo-queue-upgrade/manifest.json, render-daemon.log, hermes-rollout.log, aio-weekly logs.</div>
 </div></body></html>
