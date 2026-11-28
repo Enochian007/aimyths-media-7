@@ -30,7 +30,7 @@ a{color:#5ee0a0}
 .foot{color:#5c5c6d;font-size:12px;margin-top:28px}
 </style></head><body><div class="wrap">
 <h1>@AIMythsExplained — workflow</h1>
-<div class="sub">Live view of the Shorts queue, render daemon, Buffer rollout and the weekly long-form. Snapshot, rebuilt every 10 minutes. Updated Sat 28 Nov 2026, 10:10:19 AEST.</div>
+<div class="sub">Live view of the Shorts queue, render daemon, Buffer rollout and the weekly long-form. Snapshot, rebuilt every 10 minutes. Updated Sat 28 Nov 2026, 10:20:19 AEST.</div>
 <div class="cards"><div class="card"><div class="k">Live with AIO version</div><div class="v">45 / 99</div><div class="s">45% of the queue</div></div><div class="card"><div class="k">Waiting to host</div><div class="v">7</div><div class="s">QA passed, media swap pending</div></div><div class="card"><div class="k">Rendering now</div><div class="v">ai-edge-vs-cloud</div><div class="s">daemon —, 0 children</div></div><div class="card"><div class="k">QA failed</div><div class="v">1</div><div class="s">needs a re-render</div></div><div class="card"><div class="k">Still to build</div><div class="v">43</div><div class="s">behind the current render</div></div></div>
 <div class="bar"><i style="width:45%"></i></div>
 <h2>Queue — next up</h2>
@@ -43,19 +43,19 @@ review ai-distillation /workspace/shorts/octo-queue-upgrade/work/ai-distillation
 [2026-11-28T10:01:58+10:00] (#25) END ai-distillation -&gt; qa-pass
 [2026-11-28T10:01:58+10:00] (#26, 43 more ready) START ai-edge-vs-cloud
 prepared ai-edge-vs-cloud /workspace/shorts/octo-queue-upgrade/work/ai-edge-vs-cloud</pre>
-<h2>Buffer rollout</h2><pre>[2026-11-28T09:31:04+10:00] skip ai-not-creative: no Buffer posts yet (midday-filler territory)
-[2026-11-28T09:31:04+10:00] done processed=0
-[2026-11-28T09:45:20+10:00] start dry=False max=all daemon_only=True pid=1519375
-[2026-11-28T09:45:20+10:00] daemon healthy pid=1067117 children=1 work_age_s=-0
-[2026-11-28T09:45:20+10:00] daemon-only: done
-[2026-11-28T10:00:19+10:00] start dry=False max=all daemon_only=True pid=1527692
-[2026-11-28T10:00:19+10:00] daemon healthy pid=1067117 children=2 work_age_s=1
-[2026-11-28T10:00:19+10:00] daemon-only: done</pre>
-<h2>Weekly 9–11 min episode — gate: gated (Shorts first)</h2><pre>[2026-11-28T06:50:38+10:00] shorts gate BUSY: shorts daemon pid=1067117 has 1 encode/VO children; rendering ai-prompt-injection; 45 engine2-beats Shorts still pending
-[2026-11-28T06:50:38+10:00] tick: gated, Shorts still have priority; not rendering
-[2026-11-28T08:17:43+10:00] start status_only=False start_render=False pid=1480449
-[2026-11-28T08:17:43+10:00] episode 2026-W47 ai-sounds-sure status=script-ready dir=/workspace/longform/aio-weekly/episodes/2026-W47-ai-sounds-sure
-[2026-11-28T08:17:43+10:00] shorts gate BUSY: shorts daemon pid=1067117 has 5 encode/VO children; rendering ai-prompt-injection; 45 engine2-beats Shorts still pending
-[2026-11-28T08:17:43+10:00] tick: gated, Shorts still have priority; not rendering</pre>
+<h2>Buffer rollout</h2><pre>[2026-11-28T10:16:07+10:00] ai-rag-explained: SKIP — no watch-test.json (Dan&#x27;s publish rule)
+[2026-11-28T10:16:07+10:00] ai-multimodal-explained: SKIP — no watch-test.json (Dan&#x27;s publish rule)
+[2026-11-28T10:16:07+10:00] ai-temperature-setting: SKIP — no watch-test.json (Dan&#x27;s publish rule)
+[2026-11-28T10:16:07+10:00] ai-fine-tuning-vs-prompting: SKIP — no watch-test.json (Dan&#x27;s publish rule)
+[2026-11-28T10:16:07+10:00] ai-distillation: SKIP — no watch-test.json (Dan&#x27;s publish rule)
+[2026-11-28T10:16:07+10:00] ai-not-creative: SKIP — no watch-test.json (Dan&#x27;s publish rule)
+[2026-11-28T10:16:07+10:00] ready to host/swap: 0 []
+[2026-11-28T10:16:07+10:00] nothing to host or swap</pre>
+<h2>Weekly 9–11 min episode — gate: gated (Shorts first)</h2><pre>[2026-11-28T08:17:43+10:00] shorts gate BUSY: shorts daemon pid=1067117 has 5 encode/VO children; rendering ai-prompt-injection; 45 engine2-beats Shorts still pending
+[2026-11-28T08:17:43+10:00] tick: gated, Shorts still have priority; not rendering
+[2026-11-28T10:15:19+10:00] start status_only=False start_render=False pid=1539336
+[2026-11-28T10:15:19+10:00] episode 2026-W47 ai-sounds-sure status=script-ready dir=/workspace/longform/aio-weekly/episodes/2026-W47-ai-sounds-sure
+[2026-11-28T10:15:19+10:00] shorts gate BUSY: shorts daemon pid=1067117 has 5 encode/VO children; rendering ai-edge-vs-cloud; 42 engine2-beats Shorts still pending
+[2026-11-28T10:15:19+10:00] tick: gated, Shorts still have priority; not rendering</pre>
 <div class="foot">Read-only snapshot. Source: octo-queue-upgrade/manifest.json, render-daemon.log, hermes-rollout.log, aio-weekly logs.</div>
 </div></body></html>
